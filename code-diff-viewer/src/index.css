@@ -1,0 +1,60 @@
+@import 'prismjs/themes/prism.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Code editor styles */
+.code-editor textarea {
+  outline: none !important;
+}
+
+.code-editor textarea:focus {
+  outline: none !important;
+}
+
+.code-editor pre {
+  margin: 0 !important;
+}
+
+/* Highlight.js styles in diff view - ensure proper specificity */
+.diff-container .d2h-code-line-ctn code.hljs {
+  background: transparent !important;
+  padding: 0 !important;
+  display: inline !important;
+}
+
+/* Ensure highlight.js token colors show up */
+.diff-container .hljs-keyword { color: #d73a49 !important; }
+.diff-container .hljs-built_in { color: #005cc5 !important; }
+.diff-container .hljs-type { color: #005cc5 !important; }
+.diff-container .hljs-literal { color: #005cc5 !important; }
+.diff-container .hljs-number { color: #005cc5 !important; }
+.diff-container .hljs-string { color: #032f62 !important; }
+.diff-container .hljs-comment { color: #6a737d !important; font-style: italic; }
+.diff-container .hljs-doctag { color: #6a737d !important; }
+.diff-container .hljs-meta { color: #005cc5 !important; }
+.diff-container .hljs-title { color: #6f42c1 !important; }
+.diff-container .hljs-function { color: #6f42c1 !important; }
+.diff-container .hljs-params { color: #24292e !important; }
+.diff-container .hljs-attr { color: #005cc5 !important; }
+.diff-container .hljs-variable { color: #e36209 !important; }
