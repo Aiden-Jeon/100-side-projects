@@ -40,6 +40,10 @@ function ExportButton({ diffHtml, filename = 'diff' }) {
       font-size: 14px;
       margin-bottom: 20px;
     }
+    /* Make code background transparent so diff colors show through */
+    code.hljs {
+      background: transparent !important;
+    }
   </style>
 </head>
 <body>

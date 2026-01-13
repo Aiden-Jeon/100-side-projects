@@ -82,6 +82,7 @@ function DiffViewer({ files, viewType, onViewTypeChange, plainTextDiff, language
                 const codeElement = document.createElement('code');
                 codeElement.className = `hljs language-${language}`;
                 codeElement.style.whiteSpace = 'pre';
+                codeElement.style.background = 'transparent';
                 codeElement.innerHTML = result.value;
                 codeLineContent.appendChild(codeElement);
               } catch (e) {
